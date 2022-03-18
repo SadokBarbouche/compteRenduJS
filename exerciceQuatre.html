@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function changeColor(e) {
+            arr = ["red", "blue", "pink", "grey", "white", "purple"];
+            i = Math.floor(Math.random() * arr.length);
+            e.style.background = arr[i];
+        }
+    </script>
+</head>
+
+<body style="margin-top: 70px; font-size: 40px;">
+    <center>
+
+        <ol type="i">
+            <li onclick="changeColor(this)">
+                Random
+            </li>
+            <li onclick="changeColor(this)">
+                Color
+            </li>
+            <li onclick="changeColor(this)">
+                Every
+            </li>
+            <li onclick="changeColor(this)">
+                Click
+            </li>
+        </ol>
+    </center>
+</body>
+
+</html>
