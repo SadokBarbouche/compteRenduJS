@@ -10,7 +10,8 @@
     <script>
         function genColor(){
             //FFFFFF en base 16 = 16777215 en base 10;
-            return "#"+String(Math.floor(Math.random()*16777215));
+            let colorNum = Math.floor(Math.random()*16777215);
+            return "#"+colorNum.toString(16);
         }
         function changeColor(e) {
             let generatedColor = genColor();
